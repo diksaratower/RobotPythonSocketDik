@@ -78,9 +78,29 @@ def fun_ruka_up():
 
 def fun_ruka_down():
     ruka_up.write(0)
-    ruka_down.write(1)
+    ruka_down.write(0.3)
 
 
+while True:
+    if keyboard.is_pressed('d'):
+        right()
+    if keyboard.is_pressed('a'):
+        left()
+    if keyboard.is_pressed('w'):
+        forward()
+    if keyboard.is_pressed('s'):
+        back()
+    if keyboard.is_pressed('t'):
+        fun_ruka_open()
+    if keyboard.is_pressed('g'):
+        fun_ruka_clouse()
+    if keyboard.is_pressed('f'):
+        fun_ruka_up()
+    if keyboard.is_pressed('h'):
+        fun_ruka_down()
+    else:
+        stop()
+'''
 keyboard.add_hotkey('0', stop)
 
 keyboard.add_hotkey('d', right)
@@ -93,3 +113,4 @@ keyboard.add_hotkey('f', fun_ruka_up)
 keyboard.add_hotkey('h', fun_ruka_down)
 
 keyboard.wait('Ctrl + Q')
+'''
