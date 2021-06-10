@@ -4,6 +4,8 @@ import keyboard
 import socket
 
 board = pyfirmata.Arduino('com3')
+#board = pyfirmata.Arduino('/dev/ttyUSB0')
+
 
 gaz = 0.5
 
