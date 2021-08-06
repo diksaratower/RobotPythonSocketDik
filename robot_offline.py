@@ -7,7 +7,7 @@ board = pyfirmata.Arduino('com3')
 #board = pyfirmata.Arduino('/dev/ttyUSB0')
 
 
-gaz = 0.5
+gaz = 1
 
 left_forw = board.get_pin('d:3:p')
 left_back = board.get_pin('d:5:p')
